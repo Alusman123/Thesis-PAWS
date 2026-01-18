@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "PAWS",
+    "slug": "PlantApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/perfect.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/perfect.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alusman123.PlantApp",
+      "infoPlist": {
+        "NSRemindersUsageDescription": "This app needs permission to send you plant moisture notifications.",
+        "NSReminderUsageDescription": "This app needs permission to send you plant moisture notifications."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#4CAF50"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.alusman123.PlantApp",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#4CAF50",
+          "defaultChannel": "default",
+          "mode": "production"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8976f2c6-17ae-466b-99e1-02d19490356a"
+      }
+    }
+  }
+}
